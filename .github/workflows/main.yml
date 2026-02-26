@@ -72,7 +72,7 @@ jobs:
           path: coveragereport
 
       # Only package for Pages when merging/pushing to main
-      - name: Upload Pages artifact
+      - name: Upload Pages artifact to web
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v3
         with:
